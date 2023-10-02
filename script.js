@@ -71,3 +71,10 @@ suggestions.addEventListener('click', useSuggestion);
 // 		suggestion.style.backgroundColor = 'orangered';
 // 	}
 // });
+
+
+
+//suggestions and improvements
+//1.You have commented-out code that handles mouseover events on suggestions. You can remove this code unless you want to implement this behavior.
+//2. When filtering by letter it shows all fruits with the specified letter based on its index. You can add a bolding effect tho show on results. 
+//Example filter by 'b' results Banana, Cranberry, etc bold the b's
