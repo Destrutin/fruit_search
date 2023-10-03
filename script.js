@@ -67,16 +67,7 @@ function useSuggestion(e) {
 
 input.addEventListener('keyup', searchHandler);
 suggestions.addEventListener('click', useSuggestion);
-// suggestions.addEventListener('mouseover', (e) => {
-// 	const suggestion = e.target;
-// 	if(suggestion.tagName === 'LI') {
-// 		const allSuggestions = suggestions.querySelectorAll('li');
-// 		allSuggestions.forEach(sugg => {
-// 			sugg.style.backgroundColor = 'transparent';
-// 		});
-// 		suggestion.style.backgroundColor = 'orangered';
-// 	}
-// });
+
 
 
 
