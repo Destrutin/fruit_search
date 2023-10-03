@@ -43,11 +43,17 @@ function showSuggestions(results, inputVal) {
 	}
 	results.forEach(result => {
 		const li = document.createElement('li');
-		li.textContent = result;
+		const suggestion = result.toLowerCase();
+		const inputText = inputVal.toLowerCase();
+		if(suggestion.includes(inputText)) {
+			const bSpan = document.createElement('span');
+			bSpan.style.fontWeight = 'bold';
+			bSpan.textContent = result.slice(0, inputVal.length);
+			const remainingText = document.createTextNode(result.slice(inputVal.length));
+			li.appendChild(bSpan);
+			li.appendChild(remainingText);
+		}
 		suggestions.appendChild(li);
-		// if(result.includes(results)) {
-		// 	result.style.fontWeight = 'bold';
-		// }
 	});
 }
 
